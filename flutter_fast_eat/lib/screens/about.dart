@@ -9,20 +9,20 @@ class About extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.network(
-            'https://img.freepik.com/premium-photo/large-bowl-food-with-fish-vegetables_197463-2405.jpg?w=740',
+          Image.asset(
+            'assets/logo_fast_eat.jpg',
             // width: 200,
             // height: 200,
             fit: BoxFit.cover,
           ),
           SizedBox(height: 20),
           Text(
-            'Hello About',
-            style: TextStyle(fontSize: 24),
+            'A propos de nous',
+            style: TextStyle(fontSize: 24, fontFamily: 'Varela Round'),
           ),
           Text(
-            'Lorem ipsum dolor sit amet, consectetur lorem, sed do eiusmod tempor incididunt ut labore',
-            style: TextStyle(fontSize: 18),
+            'Fast Eat est un service de livraison de plats cuisinés lancé par Uber en 2013. Les commandes sont prises via lapplication mobile ou le site web de Uber Eats auprès des restaurants partenaires et sont livrées par des coursiers auto-entrepreneurs',
+            style: TextStyle(fontSize: 18, fontFamily: 'Varela Round'),
           ),
         ],
       ),

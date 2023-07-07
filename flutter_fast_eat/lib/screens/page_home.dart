@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class PageHome extends StatelessWidget {
@@ -11,11 +12,11 @@ class PageHome extends StatelessWidget {
         children: [
           Text(
             'FAST EAT',
-            style: TextStyle(fontSize: 34),
+            style: TextStyle(fontSize: 44, color: Color(0xFF0B8D4E), fontFamily: 'Varela Round'),
           ),
           SizedBox(height: 10,),
-          Image.network(
-            "https://img.freepik.com/vecteurs-premium/creation-logo-restaurant-restauration-rapide-hamburger-cuillere-signe-fourchette-plat-vert-orange_364304-437.jpg",
+          Image.asset(
+            "assets/logo_fast_eat.jpg",
             // width: 200,
             // height: 200,
             fit: BoxFit.cover,
@@ -23,7 +24,7 @@ class PageHome extends StatelessWidget {
           SizedBox(height: 20),
           Text(
             'Faite vous livrer en toute rapidité !',
-            style: TextStyle(fontSize: 18),
+            style: TextStyle(fontSize: 22, color: Color(0xFF0B8D4E), fontFamily: 'Varela Round'),
           ),
         ],
       ),

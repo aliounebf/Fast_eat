@@ -30,8 +30,9 @@ class _MyHomeState extends State<MyHome> {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
+        
         centerTitle: true,
-        title: Image.network("https://img.freepik.com/vecteurs-premium/creation-logo-restaurant-restauration-rapide-hamburger-cuillere-signe-fourchette-plat-vert-orange_364304-437.jpg",width: 50,height: 50,),
+        title: Image.asset("assets/logo_fast_eat.jpg",width: 50,height: 50,),
         // title: Text("FAST EAT",
         //   style: TextStyle(color: Colors.black),
         // ),
@@ -42,8 +43,8 @@ class _MyHomeState extends State<MyHome> {
       bottomNavigationBar: BottomNavigationBar(
       selectedFontSize: 10,
       unselectedFontSize: 10,
-      selectedIconTheme: const IconThemeData(color: Colors.green, size: 30),
-      selectedItemColor: Colors.green,
+      selectedIconTheme: const IconThemeData(color: Color(0xFF0B8D4E), size: 30),
+      selectedItemColor: Color(0xFF0B8D4E),
       selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
       unselectedItemColor: Colors.black,
       elevation: 0,

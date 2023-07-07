@@ -7,6 +7,11 @@ import 'package:food/screens/detailProduct.dart';
 
 void main(){
   runApp( MaterialApp(
+    theme: ThemeData(
+        primarySwatch: Colors.yellow,
+        // brightness: Brightness.light,
+        // scaffoldBackgroundColor: Colors.amber,
+      ),
     debugShowCheckedModeBanner: false,
     home: const MyHome(),
     routes: {

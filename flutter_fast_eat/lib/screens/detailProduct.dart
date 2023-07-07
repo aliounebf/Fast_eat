@@ -14,8 +14,8 @@ class DetailProduct extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
-        title: Image.network(
-          "https://img.freepik.com/vecteurs-premium/creation-logo-restaurant-restauration-rapide-hamburger-cuillere-signe-fourchette-plat-vert-orange_364304-437.jpg",
+        title: Image.asset(
+          "assets/logo_fast_eat.jpg",
           width: 50,
           height: 50,
         ),
@@ -26,8 +26,8 @@ class DetailProduct extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.network(
-              'https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000',
+            Image.asset(
+              'assets/nouille.webp',
               // width: 200,
               // height: 200,
               fit: BoxFit.cover,
@@ -38,7 +38,7 @@ class DetailProduct extends StatelessWidget {
               style: TextStyle(fontSize: 24),
             ),
             Text(
-              'Lorem ipsum dolor sit amet, consectetur lorem, sed do eiusmod tempor incididunt ut labore',
+              ' sit amet, consectetur lorem, sed do eiusmod tempor incididunt ut labore',
               style: TextStyle(fontSize: 18),
             ),
           ],

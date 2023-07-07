@@ -6,12 +6,14 @@ class ProductCard extends StatelessWidget {
 
   final String name;
   final String price;
+  final String description;
   final String imageSrc;
   
   const ProductCard({
     super.key,
     required this.name,
     required this.price,
+    required this.description,
     required this.imageSrc,
   });
 
@@ -44,11 +46,12 @@ class ProductCard extends StatelessWidget {
                 children: [
                   // image 
                   SizedBox(
+                
                     // height: 125,
                     // width: 183,
-                    child: Image.network(
+                    child: Image.asset(
                       imageSrc,   
-                      fit: BoxFit.cover,
+                      fit: BoxFit.contain,
                     ),
                   ),
                   const SizedBox(height: 10,),
@@ -57,7 +60,7 @@ class ProductCard extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 5),
                       child: Text(
                         name,
-                        style: const TextStyle(fontSize: 10,fontWeight: FontWeight.bold),
+                        style: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),                     
@@ -66,8 +69,19 @@ class ProductCard extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 5),
                     child: Text(
                       price,
-                      style: const TextStyle(fontSize: 10),
+                      style: const TextStyle(fontSize: 20),
+                      
                     ),
+                  ),
+                  Flexible(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                    child: Text(
+                      description,
+                      style: const TextStyle(fontSize: 17),
+                      
+                    ),
+                  ),
                   ),
                 ]
               ),
